@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.center {
+  padding-left: calc(50% - 620px);
+  padding-right: calc(50% - 620px);
+}
+
+.header {
+  height: 91px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 2.5fr 1fr 1fr;
+      grid-template-columns: 0.5fr 2.5fr 1fr 1fr;
+  grid-column-gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__li {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.header__li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.header .header-li__a {
+  color: #171616;
+}
+
+.header .header-li__a:hover {
+  color: #234875;
+}
+
+.header__tel {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #171616;
+}
+
+.header__time {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header__button {
+  width: 173px;
+  height: 45px;
+  display: block;
+  border: 1px solid #6CAC3D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6CAC3D;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.header__button:hover {
+  color: #82C054;
+  border: 1px solid #82C054;
+}
+
+.nav {
+  height: 66px;
+}
+
+.nav__ul {
+  border-top: 1px solid #6CAC3D;
+  border-bottom: 1px solid #6CAC3D;
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav-li__a {
+  color: #171616;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.nav .nav-li__a:hover {
+  color: #234875;
+}
+
+.promo {
+  height: 720px;
+  background-image: url(/img/promo/background.png), url(img/promo/background-main.png);
+  background-repeat: no-repeat;
+  background-position-x: 0px, center;
+}
+/*# sourceMappingURL=style.css.map */
