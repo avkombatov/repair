@@ -1,6 +1,50 @@
-.promo{
+.promo {
     height: 720px;
-    background-image:url(/img/promo/background.png), url(img/promo/background-main.png);
+    background-image: url(/img/promo/background.png), url(img/promo/background-main.png);
     background-repeat: no-repeat;
     background-position-x: 0px, center;
+padding-top:63px;
+    &__h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 70px;
+       
+        margin-bottom: 31px;
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 45px;
+        color: #000000;
+    }
+
+    &__span {
+        color: white;
+        background: #6CAC3D;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 52px;
+    }
+
+    &__p {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        min-width: 153px;
+        max-width: 211px;
+    }
+    &__conditions{
+        margin-top: 64px;
+        // display: flex;
+        // flex-wrap: wrap;
+        width: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+    &__condition{
+        // margin-right: 74px;
+    }
 }
