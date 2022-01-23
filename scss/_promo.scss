@@ -1,9 +1,13 @@
 .promo {
+    // position: relative;
     height: 720px;
     background-image: url(/img/promo/background.png), url(img/promo/background-main.png);
     background-repeat: no-repeat;
     background-position-x: 0px, center;
     padding-top: 63px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
 
     &__h1 {
         font-style: normal;

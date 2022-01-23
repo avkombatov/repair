@@ -44,73 +44,76 @@
     </ul>
 </nav>
 <div class="promo center">
-    <h1 class="promo__h1">РЕМОНТ КВАРТИР <br> В МОСКВЕ И МО</h1>
-    <span class="promo__price"> от <span class="promo__span">2450</span> руб/м2</span>
-    <div class="promo__conditions">
-        <div class="promo__condition"><img src="img/promo/cooperation.png" alt="cooperation" class="promo__img">
-            <p class="promo__p">Оплата по факту <br> приема работ</p>
+    <div class="promo__descr">
+        <h1 class="promo__h1">РЕМОНТ КВАРТИР <br> В МОСКВЕ И МО</h1>
+        <span class="promo__price"> от <span class="promo__span">2450</span> руб/м2</span>
+        <div class="promo__conditions">
+            <div class="promo__condition"><img src="img/promo/cooperation.png" alt="cooperation" class="promo__img">
+                <p class="promo__p">Оплата по факту <br> приема работ</p>
+            </div>
+            <div class="promo__condition"><img src="img/promo/consent.png" alt="consent" class="promo__img">
+                <p class="promo__p">Замер и составление сметы БЕСПЛАТНО</p>
+            </div>
+            <div class="promo__condition"><img src="img/promo/builder.png" alt="builder" class="promo__img">
+                <p class="promo__p">Выезд сметчика </p>
+            </div>
+            <div class="promo__condition"><img src="img/promo/guarantee.png" alt="guarantee" class="promo__img">
+                <p class="promo__p">Гарантия 3 года</p>
+            </div>
         </div>
-        <div class="promo__condition"><img src="img/promo/consent.png" alt="consent" class="promo__img">
-            <p class="promo__p">Замер и составление сметы БЕСПЛАТНО</p>
-        </div>
-        <div class="promo__condition"><img src="img/promo/builder.png" alt="builder" class="promo__img">
-            <p class="promo__p">Выезд сметчика </p>
-        </div>
-        <div class="promo__condition"><img src="img/promo/guarantee.png" alt="guarantee" class="promo__img">
-            <p class="promo__p">Гарантия 3 года</p>
-        </div>
+    </div>
+
+    <div class="calculation">
+        <h2 class="calculation__h2"> РАССЧИТАЙТЕ стоимость ремонта</h2>
+        <form class="calculation__form" action="">
+            <h5 class="calculation__h5">Вид ремонта:</h5>
+            <div class="calculation__type">
+                <div class="repair__left"><input type="radio" name="repair" id="cosmetic"><label for="cosmetic"
+                        class="calculation__label">Косметический</label><br>
+                    <input type="radio" name="repair" id="turnkey"><label for="turnkey" class="calculation__label">Под
+                        ключ</label></div>
+                <div class="repair__right"> <input type="radio" name="repair" id="capital"><label for="capital"
+                        class="calculation__label">Капитальный</label><br>
+                    <input type="radio" name="repair" id="designer"><label for="designer"
+                        class="calculation__label">Дизайнерский</label></div>
+
+            </div>
+            <h5 class="calculation__h5">Вид вашей недвижимости:</h5>
+            <div class="calculation__realty">
+                <div class="realty__left"><input type="radio" name="realty" id="new"><label for="new"
+                        class="realty__label">Новостройка</label></div>
+                <div class="realty__right"> <input type="radio" name="realty" id="secondary"><label for="secondary"
+                        class="realty__label">Вторичное жилье</label></div>
+            </div>
+            <h5 class="calculation__h5">Количество комнат</h5>
+            <div class="calculation__quantity">
+                <div> <input type="radio" name="quantity" id="1"><label class="quantity__label" for="1">1</label></div>
+                <div> <input type="radio" name="quantity" id="2"><label class="quantity__label" for="2">2</label></div>
+                <div><input type="radio" name="quantity" id="3"><label class="quantity__label" for="3">3</label></div>
+                <div> <input type="radio" name="quantity" id="4"><label class="quantity__label" for="4">4</label></div>
+            </div>
+            <div class="calculation__area">
+                <h5 class="calculation__h5">Площадь, м2:</h5>
+                <input class="calculation__range" type="range" min="0" max="100" step="1" value="50">
+            </div>
+            <div class="calculation__total">
+                <div class="calculation__period">
+                    <p class="total__period">Срок ремонта: <br> <span class="total__span">до 34 дней</span> </p>
+                </div>
+                <div class="calculation__discount">
+                    <p class="total__discount">Скидка составит: <br><span class="total__span">23 765 руб</span></p>
+                </div>
+            </div>
+            <h5 class="calculation__h5">Введите номер телефона</h5>
+            <div class="calculation__phone">
+                <input class="phone__input" type="phone" placeholder="+7" required>
+                <button class="calculation__button">Заказать</button>
+            </div>
+        </form>
 
     </div>
 </div>
-<div class="calculation">
-    <h2 class="calculation__h2"> РАССЧИТАЙТЕ стоимость ремонта</h2>
-    <form class="calculation__form" action="">
-        <h5 class="calculation__h5">Вид ремонта:</h5>
-        <div class="calculation__type">
-            <div class="repair__left"><input type="radio" name="repair" id="cosmetic"><label for="cosmetic"
-                    class="calculation__label">Косметический</label><br>
-                <input type="radio" name="repair" id="turnkey"><label for="turnkey" class="calculation__label">Под
-                    ключ</label></div>
-            <div class="repair__right"> <input type="radio" name="repair" id="capital"><label for="capital"
-                    class="calculation__label">Капитальный</label><br>
-                <input type="radio" name="repair" id="designer"><label for="designer"
-                    class="calculation__label">Дизайнерский</label></div>
 
-        </div>
-        <h5 class="calculation__h5">Вид вашей недвижимости:</h5>
-        <div class="calculation__realty">
-            <div class="realty__left"><input type="radio" name="realty" id="new"><label for="new"
-                    class="realty__label">Новостройка</label></div>
-            <div class="realty__right"> <input type="radio" name="realty" id="secondary"><label for="secondary"
-                    class="realty__label">Вторичное жилье</label></div>
-        </div>
-        <h5 class="calculation__h5">Количество комнат</h5>
-        <div class="calculation__quantity">
-            <div> <input type="radio" name="quantity" id="1"><label class="quantity__label" for="1">1</label></div>
-            <div> <input type="radio" name="quantity" id="2"><label class="quantity__label" for="2">2</label></div>
-            <div><input type="radio" name="quantity" id="3"><label class="quantity__label" for="3">3</label></div>
-            <div> <input type="radio" name="quantity" id="4"><label class="quantity__label" for="4">4</label></div>
-        </div>
-        <div class="calculation__area">
-            <h5 class="calculation__h5">Площадь, м2:</h5>
-            <input class="calculation__range" type="range" min="0" max="100" step="1" value="50">
-        </div>
-        <div class="calculation__total">
-            <div class="calculation__period">
-                <p class="total__period">Срок ремонта: <br> <span class="total__span">до 34 дней</span> </p>
-            </div>
-            <div class="calculation__discount">
-                <p class="total__discount">Скидка составит: <br><span class="total__span">23 765 руб</span></p>
-            </div>
-        </div>
-        <h5 class="calculation__h5">Введите номер телефона</h5>
-        <div class="calculation__phone">
-            <input class="phone__input" type="phone" placeholder="+7" required>
-            <button class="calculation__button">Заказать</button>
-        </div>
-    </form>
-
-</div>
 
 
 <body>
