@@ -1,0 +1,126 @@
+.calculation {
+    width: 461px;
+    height: 695px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    padding-top: 38px;
+    // padding-left: 55px;
+
+    &__h2 {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 23px;
+        color: $color4;
+        text-transform: uppercase;
+    }
+    &__h5{
+        margin-left: 55px;
+    }
+
+    &__form {
+        margin-top: 28px;
+    }
+
+    &__type,
+    &__realty,
+    &__quantity {
+        border-bottom: 2px solid #D6D6D6;
+        padding-bottom: 19px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 18px;
+    margin-left: 55px;
+    }
+
+    &__quantity {
+        display: grid;
+        grid-template-columns: repeat(4, 0.15fr);
+    }
+
+
+    &__h5 {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #595959;
+        margin-bottom: 20px;
+    }
+
+    .calculation__label,
+    .realty__label,
+    .quantity__label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 14px;
+        color: #595959;
+    }
+
+    &__total {
+        height: 76px;
+        margin-top: 24px;
+        padding-top: 17px;
+        background: #F2F2F2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-auto-rows: minmax(auto, auto);
+        margin-bottom: 19px;
+
+
+    }
+    &__range{
+        margin-left: 55px;
+    }
+
+    .total__period,
+    .total__discount {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color5;
+    }
+
+    .total__span {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__phone{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .phone__input {
+        width: 203px;
+        height: 40px;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        padding-left: 13px;
+    }
+
+    .phone__input:focus {
+        outline: none;
+    }
+
+    &__button {
+        width: 133px;
+        height: 48px;
+        background: #6CAC3D;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        // margin-left: 15px;
+        &:hover{
+           background: #52971F;
+           transition: 0.3s;
+        }
+    }
+
+}
