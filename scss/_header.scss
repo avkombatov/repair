@@ -55,9 +55,12 @@
         color: $color1;
         text-align: center;
         padding-top: 10px;
-        &:hover{
-            color: #82C054;
-            border: 1px solid #82C054;
-        }
+       
+            &:hover {
+                background: #52971F;
+                transition: 0.3s;
+                color: white;
+            }
+        
     }
 }

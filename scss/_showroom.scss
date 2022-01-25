@@ -1,0 +1,45 @@
+.showroom {
+    padding-top: 54px;
+    padding-bottom: 59px;
+    background: #F8F8F8;
+
+    &__main {
+        height: 188px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(192, 192, 192, 0.25);
+        border-radius: 6px;
+    }
+
+    &__block {
+        max-width: 169px;
+    }
+
+    &__h2 {
+       margin-left: 200px;
+        width: 829px;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 49px;
+        text-align: center;
+        color: $color4;
+        margin-bottom: 25px;
+                text-align: center;
+    }
+    &__p{
+        font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: $color4;
+    }
+    &__images{
+        margin-top: 34px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img{
+        height: 392px;
+    }
+}
