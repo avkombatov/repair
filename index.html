@@ -1,334 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Repair</title>
-</head>
-<header class="header center">
-    <a href="#" class="header__logo"><img src="img/header/logo.png" alt="logo"></a>
-    <nav class="header__menu">
-        <ul class="header__ul">
-            <li class="header__li"><a href="#" class="header-li__a">Цены</a></li>
-            <li class="header__li"><a href="#" class="header-li__a">Услуги</a></li>
-            <li class="header__li"><a href="#" class="header-li__a">Портфолио</a></li>
-            <li class="header__li"><a href="#" class="header-li__a">Акции</a></li>
-            <li class="header__li"><a href="#" class="header-li__a">Преимущества</a></li>
-            <li class="header__li"><a href="#" class="header-li__a">Блог</a></li>
-            <li class="header__li"><a href="#" class="header-li__a">Контакты</a></li>
-        </ul>
-    </nav>
-    <div class="header__phone"><img src="img/header/phone.png" alt="phone"><span class="header__tel">+7 (233)
-            222-22-22</span><br><span class="header__time">08:00 - 22:00, без
-            выходных</span></div>
-    <a href="#" class="header__button">Заказать звонок</a>
-</header>
-<nav class="nav center">
-    <ul class="nav__ul">
-        <li class="nav__li"><a href="#" class="nav-li__a">Ремонт квартир <img src="img/nav/arrow.png" alt="arrow"></a>
-        </li>
-        <li class="nav__li"><a href="#" class="nav-li__a">Дизайн интерьера <img src="img/nav/arrow.png" alt="arrow"></a>
-        </li>
-        <li class="nav__li"><a href="#" class="nav-li__a">Ремонт комнат <img src="img/nav/arrow.png" alt="arrow"></a>
-        </li>
-        <li class="nav__li"><a href="#" class="nav-li__a">Дома и коттеджи</a></li>
-        <li class="nav__li"><a href="#" class="nav-li__a">Прочие услуги</a></li>
-    </ul>
-</nav>
-<div class="promo center">
-    <div class="promo__descr">
-        <h1 class="promo__h1">РЕМОНТ КВАРТИР <br> В МОСКВЕ И МО</h1>
-        <span class="promo__price"> от <span class="promo__span">2450</span> руб/м2</span>
-        <div class="promo__conditions">
-            <div class="promo__condition"><img src="img/promo/cooperation.png" alt="cooperation" class="promo__img">
-                <p class="promo__p">Оплата по факту <br> приема работ</p>
-            </div>
-            <div class="promo__condition"><img src="img/promo/consent.png" alt="consent" class="promo__img">
-                <p class="promo__p">Замер и составление сметы БЕСПЛАТНО</p>
-            </div>
-            <div class="promo__condition"><img src="img/promo/builder.png" alt="builder" class="promo__img">
-                <p class="promo__p">Выезд сметчика </p>
-            </div>
-            <div class="promo__condition"><img src="img/promo/guarantee.png" alt="guarantee" class="promo__img">
-                <p class="promo__p">Гарантия 3 года</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="calculation">
-        <h2 class="calculation__h2"> РАССЧИТАЙТЕ стоимость ремонта</h2>
-        <form class="calculation__form" action="">
-            <h5 class="calculation__h5">Вид ремонта:</h5>
-            <div class="calculation__type">
-                <div class="repair__left"><input type="radio" name="repair" id="cosmetic"><label for="cosmetic"
-                        class="calculation__label">Косметический</label><br>
-                    <input type="radio" name="repair" id="turnkey"><label for="turnkey" class="calculation__label">Под
-                        ключ</label></div>
-                <div class="repair__right"> <input type="radio" name="repair" id="capital"><label for="capital"
-                        class="calculation__label">Капитальный</label><br>
-                    <input type="radio" name="repair" id="designer"><label for="designer"
-                        class="calculation__label">Дизайнерский</label></div>
-
-            </div>
-            <h5 class="calculation__h5">Вид вашей недвижимости:</h5>
-            <div class="calculation__realty">
-                <div class="realty__left"><input type="radio" name="realty" id="new"><label for="new"
-                        class="realty__label">Новостройка</label></div>
-                <div class="realty__right"> <input type="radio" name="realty" id="secondary"><label for="secondary"
-                        class="realty__label">Вторичное жилье</label></div>
-            </div>
-            <h5 class="calculation__h5">Количество комнат</h5>
-            <div class="calculation__quantity">
-                <div> <input type="radio" name="quantity" id="1"><label class="quantity__label" for="1">1</label></div>
-                <div> <input type="radio" name="quantity" id="2"><label class="quantity__label" for="2">2</label></div>
-                <div><input type="radio" name="quantity" id="3"><label class="quantity__label" for="3">3</label></div>
-                <div> <input type="radio" name="quantity" id="4"><label class="quantity__label" for="4">4</label></div>
-            </div>
-            <div class="calculation__area">
-                <h5 class="calculation__h5">Площадь, м2:</h5>
-                <input class="calculation__range" type="range" min="0" max="100" step="1" value="50">
-            </div>
-            <div class="calculation__total">
-                <div class="calculation__period">
-                    <p class="total__period">Срок ремонта: <br> <span class="total__span">до 34 дней</span> </p>
-                </div>
-                <div class="calculation__discount">
-                    <p class="total__discount">Скидка составит: <br><span class="total__span">23 765 руб</span></p>
-                </div>
-            </div>
-            <h5 class="calculation__h5">Введите номер телефона</h5>
-            <div class="calculation__phone">
-                <input class="phone__input" type="phone" placeholder="+7" required>
-                <button class="calculation__button">Заказать</button>
-            </div>
-        </form>
-
-    </div>
-</div>
-<div class="prices center">
-    <h2 class="prices__h2">Цены на ремонт</h2>
-    <div class="prices__main">
-        <div class="prices__block">
-            <div class="prices__header">
-                <img src="img/prices/prices-img.png" alt="picture" class="prices__img">
-                <div>
-                    <h4 class="prices__h4">Косметический</h4>
-                    <p class="prices__p">от 5 дней</p>
-                </div>
-
-            </div>
-            <div class="prices__descr">
-                <p class="prices__text">Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире: заменить
-                    покрытие стен, пола и потолка без предварительной подготовки</p>
-            </div>
-            <div class="prices__list">
-                <h5 class="prices__h5">Демонтаж</h5>
-                <ul class="prices__ul">
-                    <li class="prices__li">Демонтаж старых покрытий</li>
-                    <li class="prices__li">Демонтаж старой электрики</li>
-                </ul>
-                <h5 class="prices__h5">Черновые работы</h5>
-                <ul class="prices__ul">
-                    <li class="prices__li">Грунтовка стен и пола</li>
-                </ul>
-            </div>
-            <div class="prices__price">
-                <a href="№" class="prices__a">Список работ</a>
-                <p class="prices__discount"><span class="prices__crossed">от 3 245 руб/м2</span> <span
-                        class="prices__price_color">от 2 450 руб/м2</span> </p>
-                <a href="#" class="prices__button">Получить смету</a>
-            </div>
-        </div>
-        <div class="prices__block">
-            <div class="prices__header">
-                <img src="img/prices/prices-img.png" alt="picture" class="prices__img">
-                <div>
-                    <h4 class="prices__h4">Капитальный</h4>
-                    <p class="prices__p">от 14 дней</p>
-                </div>
-
-            </div>
-            <div class="prices__descr">
-                <p class="prices__text">Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире: заменить
-                    покрытие стен, пола и потолка без предварительной подготовки</p>
-            </div>
-            <div class="prices__list">
-                <h5 class="prices__h5">Демонтаж</h5>
-                <ul class="prices__ul">
-                    <li class="prices__li">Демонтаж старых покрытий</li>
-                    <li class="prices__li">Демонтаж старой электрики</li>
-                </ul>
-                <h5 class="prices__h5">Черновые работы</h5>
-                <ul class="prices__ul">
-                    <li class="prices__li">Грунтовка стен и пола</li>
-                    <li class="prices__li">Шпатлевка и штукатурка стен</li>
-                </ul>
-            </div>
-            <div class="prices__price">
-                <a href="№" class="prices__a">Список работ</a>
-                <p class="prices__discount"><span class="prices__crossed">от 3 245 руб/м2</span> <span
-                        class="prices__price_color">от 2 450 руб/м2</span> </p>
-                <a href="#" class="prices__button">Получить смету</a>
-            </div>
-        </div>
-        <div class="prices__block">
-            <div class="prices__header">
-                <img src="img/prices/prices-img.png" alt="picture" class="prices__img">
-                <div>
-                    <h4 class="prices__h4">Косметический</h4>
-                    <p class="prices__p">от 5 дней</p>
-                </div>
-
-            </div>
-            <div class="prices__descr">
-                <p class="prices__text">Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире: заменить
-                    покрытие стен, пола и потолка без предварительной подготовки</p>
-            </div>
-            <div class="prices__list">
-                <h5 class="prices__h5">Демонтаж</h5>
-                <ul class="prices__ul">
-                    <li class="prices__li">Демонтаж старых покрытий</li>
-                    <li class="prices__li">Демонтаж старой электрики</li>
-                </ul>
-                <h5 class="prices__h5">Черновые работы</h5>
-                <ul class="prices__ul">
-                    <li class="prices__li">Грунтовка стен и пола</li>
-                </ul>
-            </div>
-            <div class="prices__price">
-                <a href="№" class="prices__a">Список работ</a>
-                <p class="prices__discount"><span class="prices__crossed">от 3 245 руб/м2</span> <span
-                        class="prices__price_color">от 2 450 руб/м2</span> </p>
-                <a href="#" class="prices__button">Получить смету</a>
-            </div>
-        </div>
-        <div class="prices__block">
-            <div class="prices__header">
-                <img src="img/prices/prices-img.png" alt="picture" class="prices__img">
-                <div>
-                    <h4 class="prices__h4">Косметический</h4>
-                    <p class="prices__p">от 5 дней</p>
-                </div>
-
-            </div>
-            <div class="prices__descr">
-                <p class="prices__text">Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире: заменить
-                    покрытие стен, пола и потолка без предварительной подготовки</p>
-            </div>
-            <div class="prices__list">
-                <h5 class="prices__h5">Демонтаж</h5>
-                <ul class="prices__ul">
-                    <li class="prices__li">Демонтаж старых покрытий</li>
-                    <li class="prices__li">Демонтаж старой электрики</li>
-                </ul>
-                <h5 class="prices__h5">Черновые работы</h5>
-                <ul class="prices__ul">
-                    <li class="prices__li">Грунтовка стен и пола</li>
-                </ul>
-            </div>
-            <div class="prices__price">
-                <a href="№" class="prices__a">Список работ</a>
-                <p class="prices__discount"><span class="prices__crossed">от 3 245 руб/м2</span> <span
-                        class="prices__price_color">от 2 450 руб/м2</span> </p>
-                <a href="#" class="prices__button">Получить смету</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-<div class="examples center">
-    <h2 class="examples__h2">Примеры наших работ</h2>
-    <div class="examples__tabs">
-        <div class="examples__tab">Капитальный</div>
-        <div class="examples__tab">Косметиеский</div>
-        <div class="examples__tab">Под ключ</div>
-        <div class="examples__tab">Студии</div>
-        <div class="examples__tab">Черновой</div>
-    </div>
-    <div class="examples__inputs">
-        <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
-                id="examples-1"><label class="examples__label" for="examples-1">55 м2</label></div>
-        <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
-                id="examples-2"><label class="examples__label" for="examples-2">61 м2</label></div>
-        <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
-                id="examples-3"><label class="examples__label" for="examples-3">72 м2</label></div>
-        <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
-                id="examples-4"><label class="examples__label" for="examples-4">88 м2</label></div>
-        <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
-                id="examples-5"><label class="examples__label" for="examples-5">106 м2</label></div>
-        <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
-                id="examples-6"><label class="examples__label" for="examples-6">63 м2</label></div>
-        <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
-                id="examples-7"><label class="examples__label" for="examples-7">41 м2</label></div>
-    </div>
-    <div class="examples__main">
-        <img class="examples__arrow-left" src="img/examples/arrow-left.png" alt="arrow-left">
-        <div class="examples__slider">
-            <div class="examples__little">
-                <img class="photo__little" src="img/examples/little-1.png" alt="photo">
-                <img class="photo__little" src="img/examples/little-1.png" alt="photo">
-                <img class="photo__little" src="img/examples/little-1.png" alt="photo">
-                <img class="photo__little" src="img/examples/little-1.png" alt="photo">
-                <img class="photo__little" src="img/examples/little-1.png" alt="photo">
-            </div>
-            <div class="examples__general">
-                <img src="img/examples/general-1.png" alt="photo">
-            </div>
-            <div class="examples__descr">
-                <div class="examples__left-right">
-                    <ul class="ul__left">
-                        <li class="li__left"><img src="img/examples/dollar-sign.png" alt="dollar"><span
-                                class="examples__span-1">Сумма:</span></li>
-                        <li class="li__left"><img src="img/examples/grid.png" alt="dollar"><span
-                                class="examples__span-1">Площадь:</span></li>
-                        <li class="li__left"><img src="img/examples/calendar.png" alt="calendar"><span
-                                class="examples__span-1">Срок:</span></li>
-                        <li class="li__left"><img src="img/examples/home.png" alt="home"><span
-                                class="examples__span-1">Комнат:</span></li>
-                        <li class="li__left"><img src="img/examples/map-pin.png" alt="map"><span
-                                class="examples__span-1">Адрес:</span></li>
-                        <li class="li__left"><img src="img/examples/file-text.png" alt="map"><span
-                                class="examples__span-1">Перечень работ:</span></li>
-                      
-                    </ul>
-                    <ul class="ul__right">
-                        <li class="li__right"><span class="examples__span-2">272 250 руб.</span></li>
-                        <li class="li__right"><span class="examples__span-2">43 м2</span></li>
-                        <li class="li__right"><span class="examples__span-2">90 дней</span></li>
-                        <li class="li__right"><span class="examples__span-2">3</span></li>
-                        <li class="li__right"><span class="examples__span-2">Кулика 18</span></li>
-                    </ul>
-                </div>
-                <ul class="list__ul">
-                    <li class="examples__list">Штукатурка стен по маякам</li>
-                    <li class="examples__list">Грунтовка стен и потолка</li>
-                    <li class="examples__list">Монтаж натяжных потолков</li>
-                    <li class="examples__list">Шпатлёвка стен под обои</li>
-                    <li class="examples__list">Окраска стен</li>
-                    <li class="examples__list">Укладка плитки в с/у</li>
-                    <li class="examples__list">Прокладка электрики</li>
-                    <li class="examples__list">Установка плинтусов и откосов</li>
-                </ul>
-
-            </div>
-        </div>
-        <img class="examples__arrow-right" src="img/examples/arrow-right.png" alt="arrow-right">
-    </div>
-    <a href="#" class="examples__button">Оставить заявку</a>
-</div>
-
-
-
 <body>
 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Repair</title>
+    </head>
+    <header class="header center">
+        <a href="#" class="header__logo"><img src="img/header/logo.png" alt="logo"></a>
+        <nav class="header__menu">
+            <ul class="header__ul">
+                <li class="header__li"><a href="#" class="header-li__a">Цены</a></li>
+                <li class="header__li"><a href="#" class="header-li__a">Услуги</a></li>
+                <li class="header__li"><a href="#" class="header-li__a">Портфолио</a></li>
+                <li class="header__li"><a href="#" class="header-li__a">Акции</a></li>
+                <li class="header__li"><a href="#" class="header-li__a">Преимущества</a></li>
+                <li class="header__li"><a href="#" class="header-li__a">Блог</a></li>
+                <li class="header__li"><a href="#" class="header-li__a">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header__phone"><img src="img/header/phone.png" alt="phone"><span class="header__tel">+7 (233)
+                222-22-22</span><br><span class="header__time">08:00 - 22:00, без
+                выходных</span></div>
+        <a href="#" class="header__button">Заказать звонок</a>
+    </header>
+    <nav class="nav center">
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="#" class="nav-li__a">Ремонт квартир <img src="img/nav/arrow.png"
+                        alt="arrow"></a>
+            </li>
+            <li class="nav__li"><a href="#" class="nav-li__a">Дизайн интерьера <img src="img/nav/arrow.png"
+                        alt="arrow"></a>
+            </li>
+            <li class="nav__li"><a href="#" class="nav-li__a">Ремонт комнат <img src="img/nav/arrow.png"
+                        alt="arrow"></a>
+            </li>
+            <li class="nav__li"><a href="#" class="nav-li__a">Дома и коттеджи</a></li>
+            <li class="nav__li"><a href="#" class="nav-li__a">Прочие услуги</a></li>
+        </ul>
+    </nav>
+    <div class="promo center">
+        <div class="promo__descr">
+            <h1 class="promo__h1">РЕМОНТ КВАРТИР <br> В МОСКВЕ И МО</h1>
+            <span class="promo__price"> от <span class="promo__span">2450</span> руб/м2</span>
+            <div class="promo__conditions">
+                <div class="promo__condition"><img src="img/promo/cooperation.png" alt="cooperation" class="promo__img">
+                    <p class="promo__p">Оплата по факту <br> приема работ</p>
+                </div>
+                <div class="promo__condition"><img src="img/promo/consent.png" alt="consent" class="promo__img">
+                    <p class="promo__p">Замер и составление сметы БЕСПЛАТНО</p>
+                </div>
+                <div class="promo__condition"><img src="img/promo/builder.png" alt="builder" class="promo__img">
+                    <p class="promo__p">Выезд сметчика </p>
+                </div>
+                <div class="promo__condition"><img src="img/promo/guarantee.png" alt="guarantee" class="promo__img">
+                    <p class="promo__p">Гарантия 3 года</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculation">
+            <h2 class="calculation__h2"> РАССЧИТАЙТЕ стоимость ремонта</h2>
+            <form class="calculation__form" action="">
+                <h5 class="calculation__h5">Вид ремонта:</h5>
+                <div class="calculation__type">
+                    <div class="repair__left"><input type="radio" name="repair" id="cosmetic"><label for="cosmetic"
+                            class="calculation__label">Косметический</label><br>
+                        <input type="radio" name="repair" id="turnkey"><label for="turnkey"
+                            class="calculation__label">Под
+                            ключ</label></div>
+                    <div class="repair__right"> <input type="radio" name="repair" id="capital"><label for="capital"
+                            class="calculation__label">Капитальный</label><br>
+                        <input type="radio" name="repair" id="designer"><label for="designer"
+                            class="calculation__label">Дизайнерский</label></div>
+
+                </div>
+                <h5 class="calculation__h5">Вид вашей недвижимости:</h5>
+                <div class="calculation__realty">
+                    <div class="realty__left"><input type="radio" name="realty" id="new"><label for="new"
+                            class="realty__label">Новостройка</label></div>
+                    <div class="realty__right"> <input type="radio" name="realty" id="secondary"><label for="secondary"
+                            class="realty__label">Вторичное жилье</label></div>
+                </div>
+                <h5 class="calculation__h5">Количество комнат</h5>
+                <div class="calculation__quantity">
+                    <div> <input type="radio" name="quantity" id="1"><label class="quantity__label" for="1">1</label>
+                    </div>
+                    <div> <input type="radio" name="quantity" id="2"><label class="quantity__label" for="2">2</label>
+                    </div>
+                    <div><input type="radio" name="quantity" id="3"><label class="quantity__label" for="3">3</label>
+                    </div>
+                    <div> <input type="radio" name="quantity" id="4"><label class="quantity__label" for="4">4</label>
+                    </div>
+                </div>
+                <div class="calculation__area">
+                    <h5 class="calculation__h5">Площадь, м2:</h5>
+                    <input class="calculation__range" type="range" min="0" max="100" step="1" value="50">
+                </div>
+                <div class="calculation__total">
+                    <div class="calculation__period">
+                        <p class="total__period">Срок ремонта: <br> <span class="total__span">до 34 дней</span> </p>
+                    </div>
+                    <div class="calculation__discount">
+                        <p class="total__discount">Скидка составит: <br><span class="total__span">23 765 руб</span></p>
+                    </div>
+                </div>
+                <h5 class="calculation__h5">Введите номер телефона</h5>
+                <div class="calculation__phone">
+                    <input class="phone__input" type="phone" placeholder="+7" required>
+                    <button class="calculation__button">Заказать</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="prices center">
+        <h2 class="prices__h2">Цены на ремонт</h2>
+        <div class="prices__main">
+            <div class="prices__block">
+                <div class="prices__header">
+                    <img src="img/prices/prices-img.png" alt="picture" class="prices__img">
+                    <div>
+                        <h4 class="prices__h4">Косметический</h4>
+                        <p class="prices__p">от 5 дней</p>
+                    </div>
+
+                </div>
+                <div class="prices__descr">
+                    <p class="prices__text">Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире:
+                        заменить
+                        покрытие стен, пола и потолка без предварительной подготовки</p>
+                </div>
+                <div class="prices__list">
+                    <h5 class="prices__h5">Демонтаж</h5>
+                    <ul class="prices__ul">
+                        <li class="prices__li">Демонтаж старых покрытий</li>
+                        <li class="prices__li">Демонтаж старой электрики</li>
+                    </ul>
+                    <h5 class="prices__h5">Черновые работы</h5>
+                    <ul class="prices__ul">
+                        <li class="prices__li">Грунтовка стен и пола</li>
+                    </ul>
+                </div>
+                <div class="prices__price">
+                    <a href="№" class="prices__a">Список работ</a>
+                    <p class="prices__discount"><span class="prices__crossed">от 3 245 руб/м2</span> <span
+                            class="prices__price_color">от 2 450 руб/м2</span> </p>
+                    <a href="#" class="prices__button">Получить смету</a>
+                </div>
+            </div>
+            <div class="prices__block">
+                <div class="prices__header">
+                    <img src="img/prices/prices-img.png" alt="picture" class="prices__img">
+                    <div>
+                        <h4 class="prices__h4">Капитальный</h4>
+                        <p class="prices__p">от 14 дней</p>
+                    </div>
+
+                </div>
+                <div class="prices__descr">
+                    <p class="prices__text">Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире:
+                        заменить
+                        покрытие стен, пола и потолка без предварительной подготовки</p>
+                </div>
+                <div class="prices__list">
+                    <h5 class="prices__h5">Демонтаж</h5>
+                    <ul class="prices__ul">
+                        <li class="prices__li">Демонтаж старых покрытий</li>
+                        <li class="prices__li">Демонтаж старой электрики</li>
+                    </ul>
+                    <h5 class="prices__h5">Черновые работы</h5>
+                    <ul class="prices__ul">
+                        <li class="prices__li">Грунтовка стен и пола</li>
+                        <li class="prices__li">Шпатлевка и штукатурка стен</li>
+                    </ul>
+                </div>
+                <div class="prices__price">
+                    <a href="№" class="prices__a">Список работ</a>
+                    <p class="prices__discount"><span class="prices__crossed">от 3 245 руб/м2</span> <span
+                            class="prices__price_color">от 2 450 руб/м2</span> </p>
+                    <a href="#" class="prices__button">Получить смету</a>
+                </div>
+            </div>
+            <div class="prices__block">
+                <div class="prices__header">
+                    <img src="img/prices/prices-img.png" alt="picture" class="prices__img">
+                    <div>
+                        <h4 class="prices__h4">Косметический</h4>
+                        <p class="prices__p">от 5 дней</p>
+                    </div>
+
+                </div>
+                <div class="prices__descr">
+                    <p class="prices__text">Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире:
+                        заменить
+                        покрытие стен, пола и потолка без предварительной подготовки</p>
+                </div>
+                <div class="prices__list">
+                    <h5 class="prices__h5">Демонтаж</h5>
+                    <ul class="prices__ul">
+                        <li class="prices__li">Демонтаж старых покрытий</li>
+                        <li class="prices__li">Демонтаж старой электрики</li>
+                    </ul>
+                    <h5 class="prices__h5">Черновые работы</h5>
+                    <ul class="prices__ul">
+                        <li class="prices__li">Грунтовка стен и пола</li>
+                    </ul>
+                </div>
+                <div class="prices__price">
+                    <a href="№" class="prices__a">Список работ</a>
+                    <p class="prices__discount"><span class="prices__crossed">от 3 245 руб/м2</span> <span
+                            class="prices__price_color">от 2 450 руб/м2</span> </p>
+                    <a href="#" class="prices__button">Получить смету</a>
+                </div>
+            </div>
+            <div class="prices__block">
+                <div class="prices__header">
+                    <img src="img/prices/prices-img.png" alt="picture" class="prices__img">
+                    <div>
+                        <h4 class="prices__h4">Косметический</h4>
+                        <p class="prices__p">от 5 дней</p>
+                    </div>
+
+                </div>
+                <div class="prices__descr">
+                    <p class="prices__text">Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире:
+                        заменить
+                        покрытие стен, пола и потолка без предварительной подготовки</p>
+                </div>
+                <div class="prices__list">
+                    <h5 class="prices__h5">Демонтаж</h5>
+                    <ul class="prices__ul">
+                        <li class="prices__li">Демонтаж старых покрытий</li>
+                        <li class="prices__li">Демонтаж старой электрики</li>
+                    </ul>
+                    <h5 class="prices__h5">Черновые работы</h5>
+                    <ul class="prices__ul">
+                        <li class="prices__li">Грунтовка стен и пола</li>
+                    </ul>
+                </div>
+                <div class="prices__price">
+                    <a href="№" class="prices__a">Список работ</a>
+                    <p class="prices__discount"><span class="prices__crossed">от 3 245 руб/м2</span> <span
+                            class="prices__price_color">от 2 450 руб/м2</span> </p>
+                    <a href="#" class="prices__button">Получить смету</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="examples center">
+        <h2 class="examples__h2">Примеры наших работ</h2>
+        <div class="examples__tabs">
+            <div class="examples__tab">Капитальный</div>
+            <div class="examples__tab">Косметиеский</div>
+            <div class="examples__tab">Под ключ</div>
+            <div class="examples__tab">Студии</div>
+            <div class="examples__tab">Черновой</div>
+        </div>
+        <div class="examples__inputs">
+            <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
+                    id="examples-1"><label class="examples__label" for="examples-1">55 м2</label></div>
+            <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
+                    id="examples-2"><label class="examples__label" for="examples-2">61 м2</label></div>
+            <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
+                    id="examples-3"><label class="examples__label" for="examples-3">72 м2</label></div>
+            <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
+                    id="examples-4"><label class="examples__label" for="examples-4">88 м2</label></div>
+            <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
+                    id="examples-5"><label class="examples__label" for="examples-5">106 м2</label></div>
+            <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
+                    id="examples-6"><label class="examples__label" for="examples-6">63 м2</label></div>
+            <div class="examples__radio"><input class="examples__input" type="radio" name="examples-input"
+                    id="examples-7"><label class="examples__label" for="examples-7">41 м2</label></div>
+        </div>
+        <div class="examples__main">
+            <img class="examples__arrow-left" src="img/examples/arrow-left.png" alt="arrow-left">
+            <div class="examples__slider">
+                <div class="examples__slider-element">
+                    <div class="examples__little">
+                        <img class="photo__little" src="img/examples/little-1.png" alt="photo">
+                        <img class="photo__little" src="img/examples/little-1.png" alt="photo">
+                        <img class="photo__little" src="img/examples/little-1.png" alt="photo">
+                        <img class="photo__little" src="img/examples/little-1.png" alt="photo">
+                        <img class="photo__little" src="img/examples/little-1.png" alt="photo">
+                    </div>
+                    <div class="examples__general">
+                        <img src="img/examples/general-1.png" alt="photo">
+                    </div>
+                    <div class="examples__descr">
+                        <div class="examples__left-right">
+                            <ul class="ul__left">
+                                <li class="li__left"><img src="img/examples/dollar-sign.png" alt="dollar"><span
+                                        class="examples__span-1">Сумма:</span></li>
+                                <li class="li__left"><img src="img/examples/grid.png" alt="dollar"><span
+                                        class="examples__span-1">Площадь:</span></li>
+                                <li class="li__left"><img src="img/examples/calendar.png" alt="calendar"><span
+                                        class="examples__span-1">Срок:</span></li>
+                                <li class="li__left"><img src="img/examples/home.png" alt="home"><span
+                                        class="examples__span-1">Комнат:</span></li>
+                                <li class="li__left"><img src="img/examples/map-pin.png" alt="map"><span
+                                        class="examples__span-1">Адрес:</span></li>
+                                <li class="li__left"><img src="img/examples/file-text.png" alt="map"><span
+                                        class="examples__span-1">Перечень работ:</span></li>
+
+                            </ul>
+                            <ul class="ul__right">
+                                <li class="li__right"><span class="examples__span-2">272 250 руб.</span></li>
+                                <li class="li__right"><span class="examples__span-2">43 м2</span></li>
+                                <li class="li__right"><span class="examples__span-2">90 дней</span></li>
+                                <li class="li__right"><span class="examples__span-2">3</span></li>
+                                <li class="li__right"><span class="examples__span-2">Кулика 18</span></li>
+                            </ul>
+                        </div>
+                        <ul class="list__ul">
+                            <li class="examples__list">Штукатурка стен по маякам</li>
+                            <li class="examples__list">Грунтовка стен и потолка</li>
+                            <li class="examples__list">Монтаж натяжных потолков</li>
+                            <li class="examples__list">Шпатлёвка стен под обои</li>
+                            <li class="examples__list">Окраска стен</li>
+                            <li class="examples__list">Укладка плитки в с/у</li>
+                            <li class="examples__list">Прокладка электрики</li>
+                            <li class="examples__list">Установка плинтусов и откосов</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <img class="examples__arrow-right" src="img/examples/arrow-right.png" alt="arrow-right">
+        </div>
+        <a href="#" class="examples__button">Оставить заявку</a>
+    </div>
+    <div class="promotions center">
+        <h2 class="promotions__h2">Акции</h2>
+        <div class="promotions__main">
+            <div class="promotions__promotion">
+                <img src="img/promotion/promotion-1.png" alt="photo" class="promotions__img">
+                <img src="img/promotion/back.png" alt="background" class="promotions__back">
+                <div class="promotions__descr">
+                    <h4 class="promotions__h4">Новоселам</h4>
+                    <p class="promotions__p">Специальная скидка для тех кто переехал не более года назад</p>
+                    <a href="#" class="promotions__button">Получить скидку</a>
+                </div>
+            </div>
+            <div class="promotions__promotion">
+                <img src="img/promotion/promotion-2.png" alt="photo" class="promotions__img">
+                <img src="img/promotion/back.png" alt="background" class="promotions__back">
+                <div class="promotions__descr">
+                    <h4 class="promotions__h4">Молодоженам</h4>
+                    <p class="promotions__p">Спец.скидка если с момента регистрации прошло не более года</p>
+                    <a href="#" class="promotions__button">Получить скидку</a>
+                </div>
+            </div>
+            <div class="promotions__promotion">
+                <img src="img/promotion/promotion-3.png" alt="photo" class="promotions__img">
+                <img src="img/promotion/back.png" alt="background" class="promotions__back">
+                <div class="promotions__descr">
+                    <h4 class="promotions__h4">Пенсионерам</h4>
+                    <p class="promotions__p">Специальная скидка для наших дорогих</p>
+                    <a href="#" class="promotions__button">Получить скидку</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="promotions__button-main">Все акции</a>
+    </div>
+
+
+
+
+    
 </body>
 
 </html>

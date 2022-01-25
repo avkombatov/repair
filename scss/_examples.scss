@@ -14,6 +14,7 @@
     &__main{
         position: relative;
         margin-top: 32px;
+       
     }
     &__arrow-left{
         position: absolute;
@@ -78,8 +79,12 @@
         color: #595959;
 
     }
+    &__slider{
+        display: flex;
+        overflow: hidden;
+    }
 
-    &__slider {
+    &__slider-element {
         display: flex;
        
     }

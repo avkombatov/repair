@@ -1,0 +1,102 @@
+.promotions {
+    &__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__h2 {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 49px;
+        margin-top: 66px;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    &__promotion {
+        position: relative;
+        width: 490px;
+    }
+
+    &__img {
+        height: 490px;
+    }
+
+    &__back {
+        position: absolute;
+        left: 0px;
+        bottom: 40px;
+
+    }
+
+    &__h4 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 37px;
+        color: $color4;
+        margin-left: 19px;
+    }
+
+    &__p {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: $color4;
+        width: 272px;
+        text-align: center;
+        margin-left: -33px;
+        padding-bottom: 24px;
+        padding-top: 5px;
+    }
+
+    &__button {
+        width: 205px;
+        height: 48px;
+        background: #6CAC3D;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background: #52971F;
+            transition: 0.3s;
+        }
+    }
+
+    &__descr {
+        position: absolute;
+
+        bottom: 16px;
+        left: 82px;
+    }
+
+    &__button-main {
+        margin-left: 500px;
+        margin-top: 25px;
+        width: 205px;
+        height: 48px;
+        border: 2px solid #6CAC3D;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(148, 148, 148, 0.25));
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #6CAC3D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background: #52971F;
+            transition: 0.3s;
+            color: white;
+        }
+    }
+}

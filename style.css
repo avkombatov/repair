@@ -591,6 +591,13 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+}
+
+.examples__slider-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .examples__little {
@@ -684,5 +691,124 @@ ul li {
 
 .list__ul {
   margin-left: 40px;
+}
+
+.promotions__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.promotions__h2 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  margin-top: 66px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.promotions__promotion {
+  position: relative;
+  width: 490px;
+}
+
+.promotions__img {
+  height: 490px;
+}
+
+.promotions__back {
+  position: absolute;
+  left: 0px;
+  bottom: 40px;
+}
+
+.promotions__h4 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  color: #171616;
+  margin-left: 19px;
+}
+
+.promotions__p {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #171616;
+  width: 272px;
+  text-align: center;
+  margin-left: -33px;
+  padding-bottom: 24px;
+  padding-top: 5px;
+}
+
+.promotions__button {
+  width: 205px;
+  height: 48px;
+  background: #6CAC3D;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promotions__button:hover {
+  background: #52971F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.promotions__descr {
+  position: absolute;
+  bottom: 16px;
+  left: 82px;
+}
+
+.promotions__button-main {
+  margin-left: 500px;
+  margin-top: 25px;
+  width: 205px;
+  height: 48px;
+  border: 2px solid #6CAC3D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(148, 148, 148, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(148, 148, 148, 0.25));
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6CAC3D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promotions__button-main:hover {
+  background: #52971F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
