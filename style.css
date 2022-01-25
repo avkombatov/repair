@@ -935,4 +935,36 @@ ul li {
 .showroom__img {
   height: 392px;
 }
+
+.quality__left-img {
+  height: 349px;
+}
+
+.quality__step {
+  color: #D6D6D6;
+}
+
+.quality__step_style {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #6CAC3D;
+}
+
+.quality__h5 {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #171616;
+}
+
+.quality__descr {
+  margin-top: 11px;
+  width: 194px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #171616;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+.quality {
+    &__left-img{
+        height: 349px;
+    }
+    &__step{
+        color: #D6D6D6;
+    }
+    &__step_style {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        color: $color1;
+    }
+    &__h5{
+        margin-top: 10px;
+        font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+color: $color4;
+    }
+    &__descr{
+        margin-top: 11px;
+        width: 194px;
+        font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: $color4;
+    }
+}
