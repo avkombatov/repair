@@ -936,8 +936,45 @@ ul li {
   height: 392px;
 }
 
+.quality {
+  padding-top: 54px;
+}
+
 .quality__left-img {
   height: 349px;
+  width: 600px;
+}
+
+.quality__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 59px;
+}
+
+.quality__h2 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  color: #171616;
+}
+
+.quality__p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 11px;
+}
+
+.quality__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 24px;
 }
 
 .quality__step {
@@ -957,6 +994,10 @@ ul li {
   font-size: 18px;
   line-height: 21px;
   color: #171616;
+}
+
+.quality__block {
+  margin-right: 40px;
 }
 
 .quality__descr {
