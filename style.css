@@ -1008,4 +1008,38 @@ ul li {
   line-height: 16px;
   color: #171616;
 }
+
+.advantages__h2 {
+  margin-top: 115px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  color: #171616;
+}
+
+.advantages__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 57px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages__h5 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #171616;
+}
+
+.advantages__p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #171616;
+  margin-top: 33px;
+  width: 285px;
+}
 /*# sourceMappingURL=style.css.map */

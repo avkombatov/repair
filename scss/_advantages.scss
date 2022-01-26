@@ -1,3 +1,29 @@
-.advantages{
-    
+.advantages {
+    &__h2{
+        margin-top: 115px;
+        font-weight: bold;
+font-size: 42px;
+line-height: 49px;
+text-align: center;
+color: $color4;
+    }
+    &__main{
+        display: flex;
+        margin-top: 57px;
+        justify-content: space-between;
+    }
+    &__h5 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: $color4;
+    }
+
+    &__p {
+        font-size: 14px;
+        line-height: 16px;
+        color: $color4;
+        margin-top: 33px;
+        width: 285px;
+    }
 }
