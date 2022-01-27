@@ -17,7 +17,8 @@
         "scss/_quality.scss",
         "scss/_advantages.scss",
         "scss/_team.scss",
-        "scss/_master.scss"
+        "scss/_master.scss",
+        "scss/_supliers.scss"
     ],
     "names": [],
     "file": "style.css"
