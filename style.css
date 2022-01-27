@@ -1515,4 +1515,9 @@ ul li {
   transition: 0.3s;
   color: white;
 }
+
+.footer {
+  height: 313px;
+  background: #2E3648;
+}
 /*# sourceMappingURL=style.css.map */
