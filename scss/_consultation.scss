@@ -1,0 +1,48 @@
+.consultation {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 103px;
+    background: linear-gradient(0deg, #6CAC3D, #6CAC3D), #2E3648;
+
+
+    &__p-1 {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: white;
+
+    }
+
+    &__p-2 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        width: 570px;
+    }
+
+    &__button {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 203px;
+        height: 48px;
+
+        &:hover {
+            background: #52971F;
+            transition: 0.3s;
+            color: white;
+        }
+    }
+}

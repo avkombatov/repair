@@ -1454,4 +1454,65 @@ ul li {
   display: -ms-flexbox;
   display: flex;
 }
+
+.consultation {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 103px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6CAC3D), to(#6CAC3D)), #2E3648;
+  background: linear-gradient(0deg, #6CAC3D, #6CAC3D), #2E3648;
+}
+
+.consultation__p-1 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: white;
+}
+
+.consultation__p-2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 570px;
+}
+
+.consultation__button {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 203px;
+  height: 48px;
+}
+
+.consultation__button:hover {
+  background: #52971F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
