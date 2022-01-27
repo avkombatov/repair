@@ -1258,4 +1258,120 @@ ul li {
   color: #171616;
   list-style-type: disc;
 }
+
+.master__pagination {
+  margin-bottom: 113px;
+}
+
+.supliers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url(/img/supliers/back-2.png), url(/img/supliers/back-main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 546px;
+  padding-top: 77px;
+}
+
+.supliers__h2 {
+  text-align: left;
+}
+
+.supliers__p {
+  margin-top: 18px;
+  width: 550px;
+}
+
+.supliers__block-certificate {
+  margin-top: 52px;
+  background: white;
+  height: 213px;
+  width: 590px;
+}
+
+.supliers__block-certificate {
+  padding-top: 60px;
+}
+
+.supliers__cert-descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.supliers__descr {
+  margin-right: 20px;
+  width: 330px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #171616;
+  display: block;
+}
+
+.supliers__price {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  background: #2D4872;
+  color: white;
+  border-radius: 9px;
+  height: 49px;
+  width: 148px;
+  display: block;
+}
+
+.supliers__span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #595959;
+  margin-left: 5px;
+  margin-top: 29px;
+}
+
+.supliers__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 205px;
+  height: 48px;
+  background: #6CAC3D;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 190px;
+  margin-top: 39px;
+}
+
+.supliers__button:hover {
+  background: #52971F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.supliers__right {
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 160px;
+}
 /*# sourceMappingURL=style.css.map */
