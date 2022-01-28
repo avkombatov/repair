@@ -15,7 +15,12 @@
         <link rel="stylesheet" href="style.css">
         <title>Repair</title>
     </head>
-    <header class="header center">
+    <div class="header__mobile-hidden center center-media">
+        <a href="#" class="header__menu-a"><img src="img/header/Group 76.png" alt="menu"></a>
+        <a href="#" class="header__logo-a"><img src="img/header/logo.png" alt="logo"></a>
+        <a href="#" class="header__phone-a"><img class="header__phone_size" src="img/header/phone-mobile.png" alt="phone-mobile"></a>
+    </div>
+    <header class="header center center-media">
         <a href="#" class="header__logo"><img src="img/header/logo.png" alt="logo"></a>
         <nav class="header__menu">
             <ul class="header__ul">
@@ -31,24 +36,42 @@
         <div class="header__phone"><img src="img/header/phone.png" alt="phone"><span class="header__tel">+7 (233)
                 222-22-22</span><br><span class="header__time">08:00 - 22:00, без
                 выходных</span></div>
+        <div class="header__messenger">
+            <a href="" class="header__message-a"><img src="img/header/viber.png" alt="viber"
+                    class="header__message-img"></a>
+            <a href="" class="header__message-a"><img src="img/header/telegram.png" alt="telegram"
+                    class="header__message-img"></a>
+            <a href="" class="header__message-a"><img src="img/header/whatsapp.png" alt="whatsapp"
+                    class="header__message-img"></a>
+        </div>
         <a href="#" class="header__button">Заказать звонок</a>
     </header>
-    <nav class="nav center">
+    <nav class="header__nav-hidden center center-media">
+        <ul class="header__ul-hidden">
+            <li class="header__li-hidden"><a href="#" class="header__a-hidden">Цены</a></li>
+            <li class="header__li-hidden"><a href="#" class="header__a-hidden">Портфолио</a></li>
+            <li class="header__li-hidden"><a href="#" class="header__a-hidden">Акции</a></li>
+            <li class="header__li-hidden"><a href="#" class="header__a-hidden">Преимущества</a></li>
+            <li class="header__li-hidden"><a href="#" class="header__a-hidden">Блог</a></li>
+            <li class="header__li-hidden"><a href="#" class="header__a-hidden">Контакты</a></li>
+        </ul>
+    </nav>
+    <nav class="nav center center-media">
         <ul class="nav__ul">
-            <li class="nav__li"><a href="#" class="nav-li__a">Ремонт квартир <img src="img/nav/arrow.png"
-                        alt="arrow"></a>
+            <li class="nav__li"><a href="#" class="nav-li__a">Ремонт квартир<img class="img__arrow"
+                        src="img/nav/arrow.png" alt="arrow"></a>
             </li>
-            <li class="nav__li"><a href="#" class="nav-li__a">Дизайн интерьера <img src="img/nav/arrow.png"
-                        alt="arrow"></a>
+            <li class="nav__li nav__li_width"><a href="#" class="nav-li__a">Дизайн интерьера <img class="img__arrow"
+                        src="img/nav/arrow.png" alt="arrow"></a>
             </li>
-            <li class="nav__li"><a href="#" class="nav-li__a">Ремонт комнат <img src="img/nav/arrow.png"
-                        alt="arrow"></a>
+            <li class="nav__li"><a href="#" class="nav-li__a">Ремонт комнат <img class="img__arrow"
+                        src="img/nav/arrow.png" alt="arrow"></a>
             </li>
             <li class="nav__li"><a href="#" class="nav-li__a">Дома и коттеджи</a></li>
             <li class="nav__li"><a href="#" class="nav-li__a">Прочие услуги</a></li>
         </ul>
     </nav>
-    <div class="promo center">
+    <!-- <div class="promo center">
         <div class="promo__descr">
             <h1 class="promo__h1">РЕМОНТ КВАРТИР <br> В МОСКВЕ И МО</h1>
             <span class="promo__price"> от <span class="promo__span">2450</span> руб/м2</span>
@@ -779,7 +802,7 @@
         </div>
 
 
-    </footer>
+    </footer> -->
 
 </body>
 
