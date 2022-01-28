@@ -1,4 +1,181 @@
-.footer{
+.footer {
     height: 313px;
     background: #2E3648;
+
+
+    &__top {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 29px;
+        border-bottom: 1px solid white;
+    }
+
+    &__payment {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+        color: #CBCBCB;
+    }
+
+    &__pictures {
+        margin-top: 14px;
+    }
+
+    &__pic {
+        margin-right: 5px;
+    }
+
+    &__h5 {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $color1;
+    }
+
+    &__ul-services {
+        margin-top: 15px;
+    }
+
+    &__li-services {
+        margin-top: 7px;
+    }
+
+    &__a {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+        color: #CBCBCB;
+
+        &:hover {
+            color: #635e5e;
+        }
+    }
+
+    &__li-info {
+        margin-top: 12px;
+    }
+
+    &__a-info {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        &:hover {
+            color: #635e5e;
+        }
+    }
+
+    &__img-phone {
+        height: 20px;
+        margin-right: 9px;
+    }
+
+    &__phone {
+        display: flex;
+    }
+
+    &__p-phone {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    &__time {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    &__a-phone {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        color: #6CAC3D;
+    }
+
+    &__mail {
+        display: flex;
+        margin-top: 14px;
+        align-items: center;
+    }
+
+    &__img-mail {
+        margin-right: 9px;
+    }
+
+    &__p-mail {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    &__address {
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img-map {
+        margin-right: 9px;
+    }
+
+    &__p-address {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    &__bottom {
+        height: 60px;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 2fr 0.5fr;
+        align-items: center;
+    }
+
+    &__copy,
+    &__rights {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #CBCBCB;
+    }
+    &__rights{
+        text-decoration: underline;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__social-img {
+        margin-right: 5px;
+    }
+
+    &__bottom-info {
+        justify-self: center;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #CBCBCB;
+    }
+
+    &__bottom-a {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #CBCBCB;
+    }
 }
