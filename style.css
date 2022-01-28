@@ -192,7 +192,6 @@ ul li {
 }
 
 .promo {
-  height: 720px;
   background-image: url(/img/promo/background.png), url(img/promo/background-main.png);
   background-repeat: no-repeat;
   background-position-x: 0px, center;
@@ -1804,6 +1803,49 @@ ul li {
   .header__nav-hidden {
     display: block;
   }
+  .promo {
+    height: 1220px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-position-x: -350px, center;
+  }
+  .promo__h1 {
+    font-size: 52px;
+    line-height: 61px;
+  }
+  .promo__price {
+    font-size: 30px;
+  }
+  .calculation {
+    width: 657px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .calculation__block-1-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .calculation__quantity {
+    width: 240px;
+    height: 59px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .calculation__range {
+    margin-top: 5px;
+  }
+  .calculation__realty {
+    border-bottom: none;
+  }
+  .calculation__button {
+    width: 248px;
+  }
+  .calculation .phone__input {
+    width: 331px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1832,6 +1874,51 @@ ul li {
   .nav .nav-li__a {
     font-size: 14px;
     line-height: 16px;
+  }
+  .promo {
+    background-position-x: -350px, -610px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .promo {
+    height: 1390px;
+  }
+  .calculation {
+    width: 500px;
+  }
+  .calculation__block-1-2 {
+    display: block;
+  }
+  .calculation__type {
+    width: 400px;
+  }
+  .calculation__realty {
+    border-bottom: 2px solid #D6D6D6;
+    width: 400px;
+  }
+  .calculation__quantity {
+    width: 400px;
+    -ms-grid-columns: (0.15fr)[4];
+        grid-template-columns: repeat(4, 0.15fr);
+  }
+  .calculation__total {
+    width: 400px;
+    margin-left: 55px;
+  }
+  .calculation__phone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .calculation__button {
+    margin-top: 10px;
+    width: 400px;
+  }
+  .calculation .phone__input {
+    width: 400px;
+    margin-right: 0;
   }
 }
 

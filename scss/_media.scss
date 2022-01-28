@@ -21,6 +21,53 @@
         }
     }
 
+    .promo {
+        height: 1220px;
+        flex-direction: column;
+        background-position-x: -350px, center;
+
+        &__h1 {
+            font-size: 52px;
+            line-height: 61px;
+        }
+
+        &__price {
+            font-size: 30px;
+        }
+    }
+
+    .calculation {
+        width: 657px;
+        margin: 0 auto;
+        height: auto;
+
+        &__block-1-2 {
+            display: flex;
+        }
+
+        &__quantity {
+            width: 240px;
+            height: 59px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &__range {
+            margin-top: 5px;
+
+        }
+
+        &__realty {
+            border-bottom: none;
+        }
+
+        &__button {
+            width: 248px;
+        }
+
+        .phone__input {
+            width: 331px;
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -54,29 +101,84 @@
             margin-bottom: 10px;
             margin-left: 2px;
         }
-        .nav-li__a{
+
+        .nav-li__a {
             font-size: 14px;
-line-height: 16px
+            line-height: 16px
         }
     }
+
+    .promo {
+        background-position-x: -350px, -610px;
+    }
 }
-@media screen and (max-width:630px){
-    .header{
+
+@media screen and (max-width:700px) {
+    .promo{
+        height: 1390px;
+    }
+    .calculation {
+        width: 500px;
+
+        &__block-1-2 {
+            display: block;
+        }
+
+        &__type {
+            width: 400px;
+        }
+
+        &__realty {
+            border-bottom: 2px solid #D6D6D6;
+            width: 400px;
+        }
+        &__quantity{
+            width: 400px;
+            grid-template-columns: repeat(4, 0.15fr);
+        }
+        &__h5{
+            // margin-left: 0px;
+        }
+        &__total{
+            width: 400px;
+            margin-left: 55px;
+        }
+        &__phone{
+            flex-direction: column;
+        }
+        &__button{
+            margin-top: 10px;
+            width: 400px;
+        }
+        .phone__input{
+            width: 400px;
+            margin-right: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width:630px) {
+    .header {
         display: none;
-        &__mobile-hidden{
+
+        &__mobile-hidden {
             display: flex;
         }
-        &__nav-hidden{
+
+        &__nav-hidden {
             display: none;
         }
     }
-    .nav{
+
+    .nav {
         display: none;
     }
 }
-@media screen and (max-width:425px){
-    .header{
-        &__phone-a{
+
+@media screen and (max-width:425px) {
+    .header {
+        &__phone-a {
             width: 50px;
             height: 33px;
         }

@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="style.css">
         <title>Repair</title>
     </head>
-    <div class="header__mobile-hidden center center-media">
+    <!-- <div class="header__mobile-hidden center center-media">
         <a href="#" class="header__menu-a"><img src="img/header/Group 76.png" alt="menu"></a>
         <a href="#" class="header__logo-a"><img src="img/header/logo.png" alt="logo"></a>
         <a href="#" class="header__phone-a"><img class="header__phone_size" src="img/header/phone-mobile.png" alt="phone-mobile"></a>
@@ -70,8 +70,8 @@
             <li class="nav__li"><a href="#" class="nav-li__a">Дома и коттеджи</a></li>
             <li class="nav__li"><a href="#" class="nav-li__a">Прочие услуги</a></li>
         </ul>
-    </nav>
-    <!-- <div class="promo center">
+    </nav> -->
+    <div class="promo center center-media">
         <div class="promo__descr">
             <h1 class="promo__h1">РЕМОНТ КВАРТИР <br> В МОСКВЕ И МО</h1>
             <span class="promo__price"> от <span class="promo__span">2450</span> руб/м2</span>
@@ -94,41 +94,52 @@
         <div class="calculation">
             <h2 class="calculation__h2"> РАССЧИТАЙТЕ стоимость ремонта</h2>
             <form class="calculation__form" action="">
-                <h5 class="calculation__h5">Вид ремонта:</h5>
-                <div class="calculation__type">
-                    <div class="repair__left"><input type="radio" name="repair" id="cosmetic"><label for="cosmetic"
-                            class="calculation__label">Косметический</label><br>
-                        <input type="radio" name="repair" id="turnkey"><label for="turnkey"
-                            class="calculation__label">Под
-                            ключ</label></div>
-                    <div class="repair__right"> <input type="radio" name="repair" id="capital"><label for="capital"
-                            class="calculation__label">Капитальный</label><br>
-                        <input type="radio" name="repair" id="designer"><label for="designer"
-                            class="calculation__label">Дизайнерский</label></div>
+                <div class="calculation__block-1-2">
+                    <div class="calculation__block-1">
+                        <h5 class="calculation__h5">Вид ремонта:</h5>
+                        <div class="calculation__type">
+                            <div class="repair__left"><input type="radio" name="repair" id="cosmetic"><label
+                                    for="cosmetic" class="calculation__label">Косметический</label><br>
+                                <input type="radio" name="repair" id="turnkey"><label for="turnkey"
+                                    class="calculation__label">Под
+                                    ключ</label></div>
+                            <div class="repair__right"> <input type="radio" name="repair" id="capital"><label
+                                    for="capital" class="calculation__label">Капитальный</label><br>
+                                <input type="radio" name="repair" id="designer"><label for="designer"
+                                    class="calculation__label">Дизайнерский</label></div>
+                        </div>
+                        <h5 class="calculation__h5">Тип вашей недвижимости:</h5>
+                        <div class="calculation__realty">
+                            <div class="realty__left"><input type="radio" name="realty" id="new"><label for="new"
+                                    class="realty__label">Новостройка</label></div>
+                            <div class="realty__right"> <input type="radio" name="realty" id="secondary"><label
+                                    for="secondary" class="realty__label">Вторичное жилье</label></div>
+                        </div>
+                    </div>
+                    <div class="calculation__block-2">
+                        <h5 class="calculation__h5">Количество комнат</h5>
+                        <div class="calculation__quantity">
+                            <div> <input type="radio" name="quantity" id="1"><label class="quantity__label"
+                                    for="1">1</label>
+                            </div>
+                            <div> <input type="radio" name="quantity" id="2"><label class="quantity__label"
+                                    for="2">2</label>
+                            </div>
+                            <div><input type="radio" name="quantity" id="3"><label class="quantity__label"
+                                    for="3">3</label>
+                            </div>
+                            <div> <input type="radio" name="quantity" id="4"><label class="quantity__label"
+                                    for="4">4</label>
+                            </div>
+                        </div>
+                        <div class="calculation__area">
+                            <h5 class="calculation__h5">Площадь, м2:</h5>
+                            <input class="calculation__range" type="range" min="0" max="100" step="1" value="50">
+                        </div>
+                    </div>
+                </div>
 
-                </div>
-                <h5 class="calculation__h5">Вид вашей недвижимости:</h5>
-                <div class="calculation__realty">
-                    <div class="realty__left"><input type="radio" name="realty" id="new"><label for="new"
-                            class="realty__label">Новостройка</label></div>
-                    <div class="realty__right"> <input type="radio" name="realty" id="secondary"><label for="secondary"
-                            class="realty__label">Вторичное жилье</label></div>
-                </div>
-                <h5 class="calculation__h5">Количество комнат</h5>
-                <div class="calculation__quantity">
-                    <div> <input type="radio" name="quantity" id="1"><label class="quantity__label" for="1">1</label>
-                    </div>
-                    <div> <input type="radio" name="quantity" id="2"><label class="quantity__label" for="2">2</label>
-                    </div>
-                    <div><input type="radio" name="quantity" id="3"><label class="quantity__label" for="3">3</label>
-                    </div>
-                    <div> <input type="radio" name="quantity" id="4"><label class="quantity__label" for="4">4</label>
-                    </div>
-                </div>
-                <div class="calculation__area">
-                    <h5 class="calculation__h5">Площадь, м2:</h5>
-                    <input class="calculation__range" type="range" min="0" max="100" step="1" value="50">
-                </div>
+
                 <div class="calculation__total">
                     <div class="calculation__period">
                         <p class="total__period">Срок ремонта: <br> <span class="total__span">до 34 дней</span> </p>
@@ -146,7 +157,7 @@
 
         </div>
     </div>
-    <div class="prices center">
+    <!-- <div class="prices center">
         <h2 class="prices__h2">Цены на ремонт</h2>
         <div class="prices__main">
             <div class="prices__block">
@@ -280,8 +291,8 @@
             </div>
         </div>
 
-    </div>
-    <div class="examples center">
+    </div> -->
+    <!-- <div class="examples center">
         <h2 class="examples__h2">Примеры наших работ</h2>
         <div class="examples__tabs">
             <div class="examples__tab">Капитальный</div>
@@ -797,12 +808,8 @@
             </div>
             <p class="footer__bottom-info">Сайт не является публичной офертой и носит информационный характер</p>
             <p class="footer__bottom-map"><a href="#" class="footer__bottom-a">Карта сайта</a></p>
-
-
         </div>
-
-
-    </footer> -->
+   </footer> -->
 
 </body>
 
