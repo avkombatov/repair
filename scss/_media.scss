@@ -114,9 +114,10 @@
 }
 
 @media screen and (max-width:700px) {
-    .promo{
+    .promo {
         height: 1390px;
     }
+
     .calculation {
         width: 500px;
 
@@ -132,31 +133,38 @@
             border-bottom: 2px solid #D6D6D6;
             width: 400px;
         }
-        &__quantity{
+
+        &__quantity {
             width: 400px;
             grid-template-columns: repeat(4, 0.15fr);
         }
-        &__h5{
+
+        &__h5 {
             // margin-left: 0px;
         }
-        &__total{
+
+        &__total {
             width: 400px;
             margin-left: 55px;
         }
-        &__phone{
+
+        &__phone {
             flex-direction: column;
         }
-        &__button{
+
+        &__button {
             margin-top: 10px;
             width: 400px;
         }
-        .phone__input{
+
+        .phone__input {
             width: 400px;
             margin-right: 0;
         }
     }
 
 }
+
 
 @media screen and (max-width:630px) {
     .header {
@@ -176,6 +184,35 @@
     }
 }
 
+@media screen and (max-width:520px) {
+    .promo {
+        &__conditions {
+            width: 400px;
+        }
+
+        &__h1 {
+            font-size: 34px;
+            line-height: 40px;
+        }
+    }
+
+    .calculation {
+        width: 410px;
+
+        &__type,
+        &__realty,
+        &__quantity,
+        &__button,
+        .phone__input {
+            width: 325px;
+        }
+
+        &__total {
+            margin-left: 0;
+        }
+    }
+}
+
 @media screen and (max-width:425px) {
     .header {
         &__phone-a {
@@ -183,4 +220,122 @@
             height: 33px;
         }
     }
+
+    .promo {
+        background-position-x: -450px, -950px;
+        &__h1 {
+            font-size: 30px;
+        }
+
+        &__price {
+            font-size: 25px;
+        }
+
+        &__span {
+            font-size: 42px;
+        }
+
+        &__conditions {
+            width: 350px;
+        }
+
+        &__p {
+            font-size: 15px;
+            line-height: 19px;
+        }
+
+        &__img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .calculation {
+        width: 350px;
+
+        &__type,
+        &__realty,
+        &__quantity,
+        &__button,
+        .phone__input {
+            width: 270px;
+        }
+
+        &__total {
+            width: auto;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .promo {
+        height: 1270px;
+        background-position-x: -500px, -1000px;
+        &__h1 {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 18px;
+        }
+
+        &__price {
+            font-size: 20px;
+        }
+
+        &__span {
+            font-size: 35px;
+        }
+
+        &__img {
+            height: 40px;
+            width: 40px;
+        }
+
+        &__p {
+            font-size: 13px;
+            line-height: 17px;
+
+        }
+
+        &__conditions {
+            width: 300px;
+        }
+    }
+
+    .calculation {
+        width: 300px;
+
+        &__h2 {
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        &__h5{
+            margin-left: 26px;
+            margin-top: 20px;
+        }
+
+        &__type,
+        &__realty,
+        &__quantity,
+        &__button,
+        .phone__input {
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        .calculation__label,
+        .realty__label,
+        .quantity__label {
+            font-size: 12px;
+            line-height: 10px;
+            margin-left: 6px;
+        }
+        &__quantity{
+            height: 40px;
+        }
+        .phone__input{
+            margin-bottom: 10px;
+        }
+
+    }
+
 }
