@@ -49,6 +49,7 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 70px;
 }
 
 .header__phone-a {
@@ -194,7 +195,7 @@ ul li {
 .promo {
   background-image: url(/img/promo/background.png), url(img/promo/background-main.png);
   background-repeat: no-repeat;
-  background-position-x: 0px, center;
+  background-position-x: 0px, right;
   padding-top: 63px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,20 +389,21 @@ ul li {
 }
 
 .prices__main {
+  overflow: hidden;
+}
+
+.prices__main-slider {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (284px)[4];
+      grid-template-columns: repeat(4, 284px);
   grid-auto-rows: auto;
+  grid-gap: 15px;
 }
 
 .prices__h2 {
-  margin-top: 73px;
+  margin-top: 0px;
   margin-bottom: 48px;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 49px;
-  text-align: center;
 }
 
 .prices__ul {
@@ -557,6 +559,11 @@ ul li {
   background: #52971F;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.prices__pagination {
+  margin-bottom: 15px;
+  display: none;
 }
 
 .examples {
@@ -1846,6 +1853,21 @@ ul li {
   .calculation .phone__input {
     width: 331px;
   }
+  .prices__main {
+    padding-left: 3%;
+  }
+  .prices__h2 {
+    margin-top: 0;
+  }
+  .prices__pagination {
+    margin-top: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1937,6 +1959,9 @@ ul li {
   .nav {
     display: none;
   }
+  .promo {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -1960,6 +1985,9 @@ ul li {
 }
 
 @media screen and (max-width: 425px) {
+  h2 {
+    font-size: 36px;
+  }
   .header__phone-a {
     width: 50px;
     height: 33px;

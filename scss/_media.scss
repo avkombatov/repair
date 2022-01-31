@@ -68,6 +68,22 @@
             width: 331px;
         }
     }
+
+    .prices {
+        &__main {
+            padding-left: 3%;
+        }
+
+        &__h2 {
+            margin-top: 0;
+        }
+        &__pagination{
+            margin-top: 36px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+   
 }
 
 @media screen and (max-width:768px) {
@@ -111,6 +127,7 @@
     .promo {
         background-position-x: -350px, -610px;
     }
+   
 }
 
 @media screen and (max-width:700px) {
@@ -165,7 +182,6 @@
 
 }
 
-
 @media screen and (max-width:630px) {
     .header {
         display: none;
@@ -181,6 +197,10 @@
 
     .nav {
         display: none;
+    }
+
+    .promo {
+        margin-top: 0;
     }
 }
 
@@ -214,6 +234,10 @@
 }
 
 @media screen and (max-width:425px) {
+    h2 {
+        font-size: 36px;
+    }
+
     .header {
         &__phone-a {
             width: 50px;
@@ -223,6 +247,7 @@
 
     .promo {
         background-position-x: -450px, -950px;
+
         &__h1 {
             font-size: 30px;
         }
@@ -265,12 +290,14 @@
             width: auto;
         }
     }
+
 }
 
 @media screen and (max-width:375px) {
     .promo {
         height: 1270px;
         background-position-x: -500px, -1000px;
+
         &__h1 {
             font-size: 25px;
             line-height: 30px;
@@ -308,7 +335,8 @@
             font-size: 16px;
             margin-left: 20px;
         }
-        &__h5{
+
+        &__h5 {
             margin-left: 26px;
             margin-top: 20px;
         }
@@ -329,10 +357,12 @@
             line-height: 10px;
             margin-left: 6px;
         }
-        &__quantity{
+
+        &__quantity {
             height: 40px;
         }
-        .phone__input{
+
+        .phone__input {
             margin-bottom: 10px;
         }
 
