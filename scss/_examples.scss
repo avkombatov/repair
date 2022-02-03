@@ -88,6 +88,9 @@
         display: flex;
        
     }
+    &__left{
+        display: flex;
+    }
 
     &__little {
         width: 82px;
@@ -147,10 +150,14 @@
         line-height: 21px;
         color: #FFFFFF;
         margin-top: 31px;
-        margin-left: 485px;
+        // margin-left: 485px;
         &:hover {
             background: #52971F;
             transition: 0.3s;
+        }
+        &-block{
+            display: flex;
+            justify-content: center;
         }
     }
 

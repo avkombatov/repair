@@ -1,3 +1,49 @@
+@media screen and (max-width:1270px) {
+    .center-media {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .examples {
+        &__left {
+            flex-direction: column-reverse;
+            width: 600px;
+
+        }
+
+        &__little {
+            display: flex;
+            justify-content: space-around;
+            width: 600px;
+        }
+
+        &__general {
+            width: 600px;
+
+            &-img {
+                width: 600px;
+            }
+        }
+
+        &__slider {
+            justify-content: center;
+        }
+
+        &__arrow-left {
+            left: 15px;
+        }
+
+        &__arrow-right {
+            right: 15px;
+        }
+
+        &__tab {
+            width: 200px;
+        }
+
+    }
+}
+
 @media screen and (max-width:1200px) {
     .center-media {
         padding-left: 3%;
@@ -77,13 +123,128 @@
         &__h2 {
             margin-top: 0;
         }
-        &__pagination{
+
+        &__pagination {
             margin-top: 36px;
             display: flex;
             justify-content: center;
         }
     }
-   
+
+}
+
+@media screen and (max-width:1130px) {
+    .examples {
+        height: 750px;
+
+        &__h2 {
+            margin-bottom: 30px;
+        }
+
+        &__descr {
+            width: 350px;
+            padding-left: 35px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        &__tabs {
+            justify-content: center;
+        }
+
+        &__tab {
+            width: 150px;
+
+        }
+
+        &__tab:not(:last-child) {
+            margin-right: 22px;
+        }
+
+        &__left,
+        &__little,
+        &__general,
+        &__general-img {
+            width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width:970px) {
+    .examples {
+        height: 680px;
+        padding-top: 25px;
+
+        &__h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        &__tabs {
+            margin-bottom: 20px;
+        }
+
+        &__tab {
+            font-size: 15px;
+            width: 120px;
+        }
+
+        &__general {
+            height: 220px;
+        }
+
+        &__slider-element {
+            background: white;
+            padding: 10px;
+        }
+
+        &__left,
+        &__little,
+        &__general,
+        &__general-img {
+            width: 350px;
+        }
+
+        &__left {
+            height: 300px;
+        }
+
+        .ul__right {
+            margin-left: 0;
+        }
+
+        .photo__little {
+            width: 66px;
+        }
+    }
+}
+
+@media screen and (max-width:840px) {
+    .examples {
+        &__left {
+            height: 335px;
+        }
+
+        &__little {
+            margin-top: 40px;
+
+        }
+
+        .photo__little_hidden {
+            display: none;
+        }
+
+        &__general-img {
+            height: 246px;
+        }
+
+        &__left,
+        &__little,
+        &__general,
+        &__general-img {
+            width: 282px;
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -127,7 +288,39 @@
     .promo {
         background-position-x: -350px, -610px;
     }
-   
+
+    .examples {
+        height: 925px;
+        &__slider-element {
+            width: 390px;
+            flex-direction: column;
+        }
+
+        &__left {
+            flex-direction: row;
+            height: 245px;
+        }
+
+        &__little {
+            flex-direction: column;
+            height: 215px;
+            margin-top: 0;
+        }
+        &__radio:not(:last-child){
+            margin-right: 15px;
+        }
+        &__label{
+            margin-left: 5px;
+        }
+        &__tab:not(:last-child){
+            margin-right: 5px;
+        }
+        &__tab{
+            font-size: 14px;
+            width: 110px;
+        }
+    }
+
 }
 
 @media screen and (max-width:700px) {
@@ -202,6 +395,31 @@
     .promo {
         margin-top: 0;
     }
+}
+
+@media screen and (max-width:540px){
+.examples{
+    height: 1050px;
+    &__h2{
+        line-height: 35px;
+    }
+    &__tabs{
+        flex-wrap: wrap;
+    }
+    &__tab{
+        margin-top: 5px;
+    }
+    &__inputs{
+        flex-wrap: wrap;
+    }
+    &__radio{
+        margin-top: 5px;
+    }
+    &__arrow-right,
+    &__arrow-left{
+        top: 265px;
+    }
+}
 }
 
 @media screen and (max-width:520px) {
@@ -366,6 +584,40 @@
             margin-bottom: 10px;
         }
 
+    }
+
+    .prices {
+        h2 {
+            margin-bottom: 12px;
+            font-size: 30px;
+        }
+    }
+
+    .examples{
+        &__slider-element{
+            width: 300px;
+        }
+        &__general
+        &__general-img{
+            width: 200px;
+            height: 210px;
+        }
+        &__left{
+            height: 210px;
+        }
+        &__arrow-left,
+        &__arrow-right{
+            top: 223px;
+        }
+        &__arrow-right{
+            right: 5px;
+        }
+        &__arrow-left{
+            left: 5px;
+        }
+        &__descr{
+            padding-left: 20px;
+        }
     }
 
 }
