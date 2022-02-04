@@ -131,6 +131,12 @@
         }
     }
 
+    .work {
+        &__descr {
+            width: 125px;
+        }
+    }
+
 }
 
 @media screen and (max-width:1130px) {
@@ -166,6 +172,32 @@
         &__general,
         &__general-img {
             width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width:1060px) {
+
+    .work__main,
+    .work__line {
+        display: none;
+    }
+
+    .work-media {
+        display: flex;
+        height: 460px;
+    }
+
+    .work {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .promotions {
+        &__h2 {
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
     }
 }
@@ -291,6 +323,7 @@
 
     .examples {
         height: 925px;
+
         &__slider-element {
             width: 390px;
             flex-direction: column;
@@ -306,19 +339,55 @@
             height: 215px;
             margin-top: 0;
         }
-        &__radio:not(:last-child){
+
+        &__radio:not(:last-child) {
             margin-right: 15px;
         }
-        &__label{
+
+        &__label {
             margin-left: 5px;
         }
-        &__tab:not(:last-child){
+
+        &__tab:not(:last-child) {
             margin-right: 5px;
         }
-        &__tab{
+
+        &__tab {
             font-size: 14px;
             width: 110px;
         }
+    }
+
+    .promotions {
+        &__slider {
+            grid-template-columns: repeat(3, 248px);
+        }
+
+        &__promotion,
+        &__img {
+            width: 248px;
+            height: 319px;
+        }
+
+        &__back {
+            width: 248px;
+        }
+
+        &__h4 {
+            font-size: 28px;
+            line-height: 32px;
+        }
+
+        &__p {
+            font-size: 14px;
+            margin-left: 0;
+            width: 200px;
+        }
+
+        &__descr {
+            left: 25px;
+        }
+
     }
 
 }
@@ -397,29 +466,35 @@
     }
 }
 
-@media screen and (max-width:540px){
-.examples{
-    height: 1050px;
-    &__h2{
-        line-height: 35px;
+@media screen and (max-width:540px) {
+    .examples {
+        height: 1050px;
+
+        &__h2 {
+            line-height: 35px;
+        }
+
+        &__tabs {
+            flex-wrap: wrap;
+        }
+
+        &__tab {
+            margin-top: 5px;
+        }
+
+        &__inputs {
+            flex-wrap: wrap;
+        }
+
+        &__radio {
+            margin-top: 5px;
+        }
+
+        &__arrow-right,
+        &__arrow-left {
+            top: 265px;
+        }
     }
-    &__tabs{
-        flex-wrap: wrap;
-    }
-    &__tab{
-        margin-top: 5px;
-    }
-    &__inputs{
-        flex-wrap: wrap;
-    }
-    &__radio{
-        margin-top: 5px;
-    }
-    &__arrow-right,
-    &__arrow-left{
-        top: 265px;
-    }
-}
 }
 
 @media screen and (max-width:520px) {
@@ -447,6 +522,29 @@
 
         &__total {
             margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .work-media {
+        flex-direction: column;
+        align-items: center;
+        height: 850px;
+        padding-bottom: 15px;
+
+        &__descr {
+            width: 110px;
+        }
+
+    }
+
+    .work {
+        &__h2 {
+            font-size: 36px;
+        }
+        &__p{
+            font-size: 16px;
         }
     }
 }
@@ -506,6 +604,12 @@
 
         &__total {
             width: auto;
+        }
+    }
+
+    .promotions {
+        &__h2 {
+            font-size: 36px;
         }
     }
 
@@ -593,29 +697,34 @@
         }
     }
 
-    .examples{
-        &__slider-element{
+    .examples {
+        &__slider-element {
             width: 300px;
         }
-        &__general
-        &__general-img{
+
+        &__general &__general-img {
             width: 200px;
             height: 210px;
         }
-        &__left{
+
+        &__left {
             height: 210px;
         }
+
         &__arrow-left,
-        &__arrow-right{
+        &__arrow-right {
             top: 223px;
         }
-        &__arrow-right{
+
+        &__arrow-right {
             right: 5px;
         }
-        &__arrow-left{
+
+        &__arrow-left {
             left: 5px;
         }
-        &__descr{
+
+        &__descr {
             padding-left: 20px;
         }
     }
