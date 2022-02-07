@@ -243,12 +243,30 @@
             width: 500px;
         }
     }
-}
-
-@media screen and (max-width:1130px) {
     .showroom {
         &__img {
             width: 400px;
+        }
+    }
+    .supliers{
+        &__main{
+            flex-direction: column-reverse;
+        }
+        &__block-certificate{
+            display: flex;
+            justify-content: space-around;
+           
+            width: auto;
+            height: 100px;
+            padding-top: 27px;
+            margin-top: 40px;
+        }
+        &__button{
+            margin-top: 0;
+            margin-left: 0;
+        }
+        &__descr{
+            width: 290px;
         }
     }
 }
@@ -542,6 +560,24 @@
         
 
     }
+    .supliers{
+        padding-top: 30px;
+        &__main{
+            margin-top: 20px;
+        }
+        &__block-certificate{
+            flex-direction: column;
+            align-items: center;
+            height: 140px;
+            padding-top: 10px;
+        }
+        &__p{
+            width: auto;
+        }
+        &__h2{
+            line-height: 35px;
+        }
+    }
 
 }
 
@@ -739,6 +775,32 @@
             height: 174px;
         }
     }
+    .supliers{
+        padding-top: 10px;
+        &__p{
+            margin-top: 5px;
+        }
+        &__h2{
+font-size: 36px;
+line-height: 30px;
+        }
+        &__main{
+            margin-top: 10px;
+        }
+        &__right{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__cert-descr{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__block-certificate{
+            height: 180px;
+        }
+        &__price-main{
+                margin-top: 10px;
+        }
+    }
 }
 
 @media screen and (max-width:520px) {
@@ -887,6 +949,16 @@
     .advantages {
         &__h2 {
             font-size: 36px;
+        }
+    }
+
+    .supliers{
+        &__block-certificate{
+            height: 170px;
+            margin-top: 15px;
+        }
+        &__descr{
+            font-size: 15px;
         }
     }
 
@@ -1047,6 +1119,15 @@
         &__arrow-left,
         &__arrow-right {
             bottom: 500px;
+        }
+    }
+    .supliers{
+        padding-top: 30px;
+        &__img{
+            width: 110px;
+        }
+        &__block-certificate{
+            margin-top: 30px;
         }
     }
 

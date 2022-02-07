@@ -1,11 +1,19 @@
 .supliers {
-    display: flex;
-    justify-content:space-around;
+    // display: flex;
+    // justify-content:space-around;
+    margin-top: 15px;
     background-image: url(/img/supliers/back-2.png), url(/img/supliers/back-main.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 546px;
     padding-top: 77px;
+    &__main{
+        display: flex;
+        margin-top: 50px;
+    }
+    &__price-main{
+        display: flex;
+    }
 
     &__h2 {
 
@@ -18,7 +26,7 @@
     }
 
     &__block-certificate {
-        margin-top: 52px;
+        // margin-top: 52px;
         background: white;
         height: 213px;
         width: 590px;
@@ -87,11 +95,11 @@
         }
     }
     &__right{
-        height: 200px;
+        // height: 200px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         align-items: center;
-        margin-top: 160px
+        // margin-top: 160px
     }
 }
