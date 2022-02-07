@@ -1,5 +1,8 @@
 .team {
     position: relative;
+    &__img-2{
+        display: none;
+    }
 
     &__h2 {
         margin-top: 74px;
@@ -97,14 +100,14 @@
 
     &__arrow-left {
         position: absolute;
-        bottom: 250px;
+        bottom: 180px;
         cursor: pointer;
     }
 
     &__arrow-right {
         position: absolute;
         right: 50px;
-        bottom: 250px;
+        bottom: 180px;
         cursor: pointer;
     }
 

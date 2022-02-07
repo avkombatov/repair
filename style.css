@@ -1269,6 +1269,10 @@ ul li {
   position: relative;
 }
 
+.team__img-2 {
+  display: none;
+}
+
 .team__h2 {
   margin-top: 74px;
 }
@@ -1379,14 +1383,14 @@ ul li {
 
 .team__arrow-left {
   position: absolute;
-  bottom: 250px;
+  bottom: 180px;
   cursor: pointer;
 }
 
 .team__arrow-right {
   position: absolute;
   right: 50px;
-  bottom: 250px;
+  bottom: 180px;
   cursor: pointer;
 }
 
@@ -2103,6 +2107,21 @@ ul li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .team__h2 {
+    margin-top: 40px;
+  }
+  .team__nav {
+    display: none;
+  }
+  .team__line {
+    display: none;
+  }
+  .team__descr {
+    margin-left: 20px;
+  }
+  .team__img {
+    margin-left: -100px;
+  }
 }
 
 @media screen and (max-width: 1130px) {
@@ -2160,6 +2179,12 @@ ul li {
   .promotions__h2 {
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+  .team__img {
+    margin-left: -200px;
+  }
+  .team__arrow-right {
+    right: 33px;
   }
 }
 
@@ -2329,6 +2354,37 @@ ul li {
   .showroom__h2 {
     font-size: 36px;
     line-height: 40px;
+  }
+  .team__slider-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team__img {
+    display: none;
+  }
+  .team__img-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team__descr-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team__arrow-left, .team__arrow-right {
+    bottom: 550px;
+  }
+  .team__descr {
+    margin-top: 40px;
   }
 }
 
@@ -2708,6 +2764,18 @@ ul li {
   .quality__right, .quality__left {
     width: 310px;
     margin-left: 0;
+  }
+  .team__img-media {
+    width: 290px;
+  }
+  .team__arrow-right {
+    right: 17px;
+  }
+  .team__arrow-left {
+    left: 17px;
+  }
+  .team__arrow-left, .team__arrow-right {
+    bottom: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
