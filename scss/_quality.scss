@@ -2,6 +2,14 @@
     padding-left: calc(50% - 750px);
     padding-right: calc(50% - 750px);
     padding-top: 54px;
+    &__right-top,
+    &__right-bottom{
+        display: flex;
+        justify-content: start;
+    }
+    &__right-top{
+        margin-bottom: 15px;
+    }
 
     &__left-img {
         height: 349px;
@@ -31,7 +39,8 @@
 
     &__right {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        flex-direction: column;
         margin-left: 24px;
     }
 
@@ -55,7 +64,7 @@
     }
 
     &__block {
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     &__descr {

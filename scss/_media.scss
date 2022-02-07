@@ -50,6 +50,31 @@
             width: 500px;
         }
     }
+    .quality{
+        &__main{
+            flex-direction: column-reverse;
+            align-items:center;
+        }
+
+        &__left{
+            width: 650px;
+            display: flex;
+            justify-content: center;
+            &-img{
+                width: 650px;
+            }
+        }
+        &__right{
+            width: 650px;
+            margin-left: 50px;
+            align-items: start;
+            margin-bottom: 15px;
+
+        }
+        &__block{
+            margin-right: 18px;
+        }
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -479,6 +504,31 @@
             margin-right: 0;
         }
     }
+    .quality{
+        &__right-top,
+        &__right-bottom{
+            flex-direction: column;
+        }
+        &__descr{
+            width: 100%;
+        }
+        &__left-img{
+            width: 414px;
+            height: 255px;
+        }
+        &__h2{
+            font-size: 36px;
+            line-height: 40px;
+        }
+        &__p{
+            font-size: 16px;
+        }
+        &__right,
+        &__left{
+            width: 450px;
+            margin-left: 0;
+        }
+    }
 
 }
 
@@ -618,6 +668,17 @@
             font-size: 16px;
         }
     }
+    .quality{
+        &__left-img{
+            width: 400px;
+            height: 240px;
+        }
+        &__right,
+        &__left{
+            width: 400px;
+           
+        }
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -681,6 +742,17 @@
     .promotions {
         &__h2 {
             font-size: 36px;
+        }
+    }
+    .quality{
+        &__left-img{
+            width: 350px;
+            height: 220px;
+        }
+        &__right,
+        &__left{
+            width: 350px;
+           margin-left: 0;
         }
     }
 
@@ -808,6 +880,17 @@
             margin-top: 10px;
             width: 300px;
             height: 290px;
+        }
+    }
+    .quality{
+        &__left-img{
+            width: 310px;
+            height: 190px;
+        }
+        &__right,
+        &__left{
+            width: 310px;
+           margin-left: 0;
         }
     }
 
