@@ -24,17 +24,20 @@
         line-height: 21px;
         color: $color4;
     }
-    &__hr{
-        width: 900px;
+
+    &__hr {
+        // width: 900px;
         background: #C4C4C4;
-transform: matrix(1, 0, 0, -1, 0, 0);
+        transform: matrix(1, 0, 0, -1, 0, 0);
     }
-    &__block-active{
+
+    &__block-active {
         padding-top: 15px;
+        padding-right: 15px;
         padding-bottom: 20px;
         padding-left: 8px;
         background: #F2F2F2;
-box-shadow: 0px 0px 10px rgba(215, 215, 215, 0.25);
+        box-shadow: 0px 0px 10px rgba(215, 215, 215, 0.25);
         margin-bottom: 10px;
     }
 

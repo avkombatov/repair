@@ -5,6 +5,10 @@
     align-items: center;
     height: 103px;
     background: linear-gradient(0deg, #6CAC3D, #6CAC3D), #2E3648;
+    &__left{
+         display: flex;
+         align-items:center;
+    }
 
 
     &__p-1 {
@@ -13,6 +17,7 @@
         line-height: 26px;
         text-align: center;
         color: white;
+        margin-right: 50px;
 
     }
 

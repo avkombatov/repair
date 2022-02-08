@@ -195,7 +195,7 @@ ul li {
 .promo {
   background-image: url(/img/promo/background.png), url(img/promo/background-main.png);
   background-repeat: no-repeat;
-  background-position-x: 0px, right;
+  background-position-x: 0px, center;
   padding-top: 63px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1483,7 +1483,7 @@ ul li {
 .supliers {
   margin-top: 15px;
   background-image: url(/img/supliers/back-2.png), url(/img/supliers/back-main.png);
-  background-position: center;
+  background-position: 0px, center;
   background-repeat: no-repeat;
   height: 546px;
   padding-top: 77px;
@@ -1627,7 +1627,6 @@ ul li {
 }
 
 .questions__hr {
-  width: 900px;
   background: #C4C4C4;
   -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
           transform: matrix(1, 0, 0, -1, 0, 0);
@@ -1635,6 +1634,7 @@ ul li {
 
 .questions__block-active {
   padding-top: 15px;
+  padding-right: 15px;
   padding-bottom: 20px;
   padding-left: 8px;
   background: #F2F2F2;
@@ -1693,12 +1693,22 @@ ul li {
   background: linear-gradient(0deg, #6CAC3D, #6CAC3D), #2E3648;
 }
 
+.consultation__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .consultation__p-1 {
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: white;
+  margin-right: 50px;
 }
 
 .consultation__p-2 {
@@ -1943,6 +1953,10 @@ ul li {
   font-size: 14px;
   line-height: 16px;
   color: #CBCBCB;
+}
+
+.footer__hidden {
+  display: none;
 }
 
 @media screen and (max-width: 1270px) {
@@ -2215,6 +2229,19 @@ ul li {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .consultation__left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .consultation__p-1 {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 970px) {
   .examples {
     height: 680px;
@@ -2262,6 +2289,35 @@ ul li {
 @media screen and (max-width: 860px) {
   .showroom__img {
     width: 350px;
+  }
+  .footer {
+    height: 390px;
+  }
+  .footer__social {
+    display: none;
+  }
+  .footer__bottom {
+    -ms-grid-columns: 1fr 2fr 0.5fr;
+        grid-template-columns: 1fr 2fr 0.5fr;
+  }
+  .footer__top {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__hidden {
+    display: block;
+  }
+  .footer__social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -2413,6 +2469,19 @@ ul li {
   .team__descr {
     margin-top: 40px;
   }
+  .consultation {
+    height: 160px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .consultation__p-1 {
+    margin-right: 0;
+  }
   .supliers {
     padding-top: 30px;
   }
@@ -2555,6 +2624,35 @@ ul li {
   .promo {
     margin-top: 0;
   }
+  .footer {
+    height: 910px;
+  }
+  .footer__top {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .footer__services, .footer__info, .footer__contacts, .footer__mail, .footer__address {
+    text-align: center;
+  }
+  .footer__bottom {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap: 15px;
+    padding-top: 10px;
+  }
+  .footer__social-media {
+    display: none;
+  }
+  .footer__social-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__bottom-info {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 606px) {
@@ -2571,6 +2669,10 @@ ul li {
   }
   .advantages__h2 {
     margin-top: 50px;
+  }
+  .consultation__p-2 {
+    width: auto;
+    text-align: center;
   }
 }
 
@@ -2684,6 +2786,16 @@ ul li {
   .quality__right, .quality__left {
     width: 400px;
   }
+  .questions__p {
+    line-height: 25px;
+  }
+  .questions__h2 {
+    line-height: 35px;
+    margin-top: 35px;
+  }
+  .questions__main {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -2741,12 +2853,18 @@ ul li {
   .advantages__h2 {
     font-size: 36px;
   }
+  .team__img-media {
+    width: 360px;
+  }
   .supliers__block-certificate {
     height: 170px;
     margin-top: 15px;
   }
   .supliers__descr {
     font-size: 15px;
+  }
+  .consultation {
+    height: 200px;
   }
 }
 
